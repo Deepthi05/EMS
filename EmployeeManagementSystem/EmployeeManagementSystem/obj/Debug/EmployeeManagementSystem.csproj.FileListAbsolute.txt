@@ -1,0 +1,11 @@
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmployeeManagementSystem.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmployeeManagementSystem.pdb
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmpBL.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmpEntity.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EMP_DAL.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmpBL.pdb
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmpEntity.pdb
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\bin\EMP_DAL.pdb
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb

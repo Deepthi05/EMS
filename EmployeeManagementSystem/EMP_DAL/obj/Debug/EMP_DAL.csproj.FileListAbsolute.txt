@@ -1,0 +1,8 @@
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\bin\Debug\EMP_DAL.dll.config
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\bin\Debug\EMP_DAL.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\bin\Debug\EMP_DAL.pdb
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\bin\Debug\EmpEntity.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\bin\Debug\EmpEntity.pdb
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\obj\Debug\EMP_DAL.csprojResolveAssemblyReference.cache
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\obj\Debug\EMP_DAL.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EMP_DAL\obj\Debug\EMP_DAL.pdb

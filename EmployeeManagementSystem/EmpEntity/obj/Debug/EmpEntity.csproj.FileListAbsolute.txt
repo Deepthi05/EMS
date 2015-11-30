@@ -1,0 +1,4 @@
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmpEntity\bin\Debug\EmpEntity.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmpEntity\bin\Debug\EmpEntity.pdb
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmpEntity\obj\Debug\EmpEntity.dll
+C:\Users\m1023759\Documents\Visual Studio 2010\Projects\EmployeeManagementSystem\EmpEntity\obj\Debug\EmpEntity.pdb

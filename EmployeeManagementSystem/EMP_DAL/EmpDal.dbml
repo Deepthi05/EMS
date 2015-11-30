@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Employee" Class="EmpDalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlserver;Initial Catalog=Employee;Integrated Security=True" SettingsObjectName="EMP_DAL.Properties.Settings" SettingsPropertyName="EmployeeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EmpAttendance" Member="EmpAttendances">
+    <Type Name="EmpAttendance">
+      <Column Name="Month" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Empld" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DaysPresent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.users" Member="users">
+    <Type Name="user">
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmpDetails" Member="EmpDetails">
+    <Type Name="EmpDetail">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Leaves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmailLog" Member="EmailLogs">
+    <Type Name="EmailLog">
+      <Column Name="mailMsg" Type="System.String" DbType="VarChar(1500)" CanBeNull="true" />
+      <Column Name="DateofLog" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.DeleteEmployee" Method="DeleteEmployee">
+    <Parameter Name="inEmpId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertEmployee" Method="insertEmployee">
+    <Parameter Name="inEmpFname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpMname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpLname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpAdd" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpCity" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inZipCode" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpState" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpPhNo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpEmail" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpDepart" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpPic" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpSal" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="inEmpLeaves" Type="System.Int32" DbType="Int" />
+    <Parameter Name="inEmpPosition" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UpdateEmp" Method="UpdateEmp">
+    <Parameter Name="inEmpId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="inEmpFname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpMname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpLname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpAdd" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpCity" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inZipCode" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpState" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpPhNo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpEmail" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpDepart" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpPic" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inEmpSal" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="inEmpLeaves" Type="System.Int32" DbType="Int" />
+    <Parameter Name="inEmpPosition" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.getEmp" Method="getEmp">
+    <Parameter Name="in_FirstName" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="getEmpResult">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Leaves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetAuthorization" Method="GetAuthorization">
+    <Parameter Name="inUser" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="inPass" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="GetAuthorizationResult">
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getEmpOnId" Method="getEmpOnId">
+    <Parameter Name="empId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="getEmpOnIdResult">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Leaves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.InsertLeave" Method="InsertLeave">
+    <Parameter Name="in_EmpId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="in_Todate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="in_FromDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="in_descr" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.getLeaves" Method="getLeaves">
+    <Parameter Name="in_EmpId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="getLeavesResult">
+      <Column Name="EmpId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FromDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ToDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Reason" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getIsPresent" Method="getIsPresent">
+    <Parameter Name="in_EmpId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="in_dau" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetLeavesApplied" Method="GetLeavesApplied">
+    <Parameter Name="in_empId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="in_month" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetLeavesAppliedResult">
+      <Column Name="FromDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ToDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetSalary" Method="GetSalary">
+    <Parameter Name="in_empId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetSalaryResult">
+      <Column Name="Salary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetIsAdmin" Method="GetIsAdmin">
+    <Parameter Name="inU" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="inP" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetIsAdminResult">
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getEmpOnName" Method="getEmpOnName">
+    <Parameter Name="empName" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="getEmpOnNameResult">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Leaves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.changePassword" Method="changePassword">
+    <Parameter Name="in_uname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="in_oldPass" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="in_newPass" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.InsertEmailLog" Method="InsertEmailLog">
+    <Parameter Name="in_emsg" Type="System.String" DbType="VarChar(1000)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetSalaryonAttend" Method="GetSalaryonAttend">
+    <Parameter Name="in_EmpId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="in_month" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetSalaryonAttendResult">
+      <Column Name="EmpId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateCurrent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
